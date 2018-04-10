@@ -104,7 +104,7 @@ class FluentBadgeExtension extends Extension
                 '<span class="%s" title="%s">%s</span>',
                 implode(' ', $badgeClasses),
                 $tooltip,
-                $record->getSourceLocale()->getLocaleSuffix()
+                $record->getSourceLocale()->URLSegment
             )
         );
     }
